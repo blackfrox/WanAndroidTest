@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_title_auto_cache">自动缓存</string>
+    <string name="pref_title_no_image_mode">无图模式</string>
+    <string name="pref_title_night_mode">夜间模式</string>
+    <string name="pref_title_common_settings">通用设置</string>
+    <string name="pref_title_other_settings">其它设置</string>
+    <string name="pref_key_auto_cache">pref.auto_cache</string>
+    <string name="pref_key_no_image">pref.no_image</string>
+    <string name="pref_key_night_mode">pref.night_mode</string>
+    <string name="pref_title_feed_back">意见反馈</string>
+    <string name="pref_title_cache_clear">清除缓存</string>
+    <string name="pref_key_cache_clean">pref.cache_clean</string>
+    <string name="pref_summary_cache_clear">0k</string>
+    <string name="pref_key_feedback">pref.feedback</string>
+</resources>

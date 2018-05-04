@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <PreferenceCategory
+       android:title="@string/pref_title_common_settings">
+       <CheckBoxPreference
+           android:icon="@drawable/ic_auto_cache"
+           android:defaultValue="true"
+           android:key="@string/pref_key_auto_cache"
+           android:title="@string/pref_title_auto_cache"/>
+
+       <CheckBoxPreference
+           android:icon="@drawable/ic_no_image"
+           android:defaultValue="false"
+           android:key="@string/pref_key_no_image"
+           android:title="@string/pref_title_no_image_mode"/>
+
+   </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_title_other_settings">
+        <Preference
+            android:key="@string/pref_key_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/pref_title_feed_back"/>
+
+        <Preference
+            android:key="@string/pref_key_cache_clean"
+            android:icon="@drawable/ic_cache_clean"
+            android:title="@string/pref_title_cache_clear"
+            android:summary="@string/pref_summary_cache_clear"/>
+    </PreferenceCategory>
+</PreferenceScreen>

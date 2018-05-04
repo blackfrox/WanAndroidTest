@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    app:title=""
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:titleTextAppearance="@style/Toolbar.TitleText">
+
+    <TextView
+        android:id="@+id/mTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="开发环境"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/top_title"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,156 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=2600, tid=0x0000000000002114
+#
+# JRE version:  (8.0_152-b02) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.152-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000005495000):  JavaThread "Unknown thread" [_thread_in_vm, id=8468, stack(0x0000000005390000,0x0000000005490000)]
+
+Stack: [0x0000000005390000,0x0000000005490000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000005495000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8468, stack(0x0000000005390000,0x0000000005490000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 18944K, used 327K [0x00000000feb00000, 0x0000000100000000, 0x0000000100000000)
+  eden space 16384K, 2% used [0x00000000feb00000,0x00000000feb51ec8,0x00000000ffb00000)
+  from space 2560K, 0% used [0x00000000ffd80000,0x00000000ffd80000,0x0000000100000000)
+  to   space 2560K, 0% used [0x00000000ffb00000,0x00000000ffb00000,0x00000000ffd80000)
+ ParOldGen       total 44032K, used 0K [0x00000000fc000000, 0x00000000feb00000, 0x00000000feb00000)
+  object space 44032K, 0% used [0x00000000fc000000,0x00000000fc000000,0x00000000feb00000)
+ Metaspace       used 772K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 73K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000005300000,0x0000000005330000] byte_map_base: 0x0000000004b20000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000051034970
+ Begin Bits: [0x0000000014d50000, 0x0000000014e50000)
+ End Bits:   [0x0000000014e50000, 0x0000000014f50000)
+
+Polling page: 0x00000000036d0000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000005590000, 0x0000000005800000, 0x0000000014590000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.032 loading class java/lang/Short
+Event: 0.032 loading class java/lang/Short done
+Event: 0.032 loading class java/lang/Integer
+Event: 0.032 loading class java/lang/Integer done
+Event: 0.032 loading class java/lang/Long
+Event: 0.032 loading class java/lang/Long done
+Event: 0.034 loading class java/lang/NullPointerException
+Event: 0.034 loading class java/lang/NullPointerException done
+Event: 0.034 loading class java/lang/ArithmeticException
+Event: 0.034 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff66b7f0000 - 0x00007ff66b821000 	D:\Android\AndroidStudio\jre\bin\java.exe
+0x00007ffcf6db0000 - 0x00007ffcf6f90000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffcf6710000 - 0x00007ffcf67be000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffcf3900000 - 0x00007ffcf3b66000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffcf5f40000 - 0x00007ffcf5fe1000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffcf6470000 - 0x00007ffcf650d000 	C:\Windows\System32\msvcrt.dll
+0x00007ffcf49e0000 - 0x00007ffcf4a3b000 	C:\Windows\System32\sechost.dll
+0x00007ffcf48c0000 - 0x00007ffcf49df000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffcf4490000 - 0x00007ffcf461e000 	C:\Windows\System32\USER32.dll
+0x00007ffcf3e60000 - 0x00007ffcf3e80000 	C:\Windows\System32\win32u.dll
+0x00007ffcf67c0000 - 0x00007ffcf67e8000 	C:\Windows\System32\GDI32.dll
+0x00007ffcf3cc0000 - 0x00007ffcf3e51000 	C:\Windows\System32\gdi32full.dll
+0x00007ffcf3b70000 - 0x00007ffcf3c0b000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffcf4130000 - 0x00007ffcf4226000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffcea1c0000 - 0x00007ffcea429000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.16299.15_none_cc92fb402215d91d\COMCTL32.dll
+0x00007ffcf5ff0000 - 0x00007ffcf62f8000 	C:\Windows\System32\combase.dll
+0x00007ffcf3ee0000 - 0x00007ffcf3f52000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffcf6c40000 - 0x00007ffcf6c6d000 	C:\Windows\System32\IMM32.DLL
+0x00000000516b0000 - 0x0000000051782000 	D:\Android\AndroidStudio\jre\jre\bin\msvcr100.dll
+0x0000000050870000 - 0x00000000510af000 	D:\Android\AndroidStudio\jre\jre\bin\server\jvm.dll
+0x00007ffcf4790000 - 0x00007ffcf4798000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffcf1df0000 - 0x00007ffcf1dfa000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffcf10e0000 - 0x00007ffcf1103000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffcef6c0000 - 0x00007ffcef6c9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffcf4420000 - 0x00007ffcf448c000 	C:\Windows\System32\WS2_32.dll
+0x00007ffcf1080000 - 0x00007ffcf10aa000 	C:\Windows\SYSTEM32\winmmbase.dll
+0x00007ffcf4230000 - 0x00007ffcf427a000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffcef110000 - 0x00007ffcef11f000 	D:\Android\AndroidStudio\jre\jre\bin\verify.dll
+0x00007ffce8260000 - 0x00007ffce8289000 	D:\Android\AndroidStudio\jre\jre\bin\java.dll
+0x00007ffce84f0000 - 0x00007ffce8506000 	D:\Android\AndroidStudio\jre\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx64M -Dfile.encoding=GBK -Duser.country=CN -Duser.language=zh -Duser.variant 
+java_command: com.google.devtools.build.android.desugar.Desugar --input D:\Android\TEST\WanAndroidTest\app\build\tmp\kotlin-classes\debug --output D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\desugar\debug\1 --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\classes\debug --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\tmp\kotlin-classes\debug --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\tmp\kapt3\classes\debug --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\17.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\42.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\9.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\26.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\51.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\25.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\50.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\68.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\33.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\18.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\41.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\1.jar --classpath_entry D:\Android\TEST\WanAndroidTest\app\build\intermediates\transforms\stackFramesFixer\debug\24.jar --classpath_entry D:\Android\TEST\W
+java_class_path (initial): C:\Users\Administrator\AppData\Local\Temp\desugar_deploy.jar6873631660526018332
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 16299 (10.0.16299.15)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, clmul, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 8281380k(1179532k free), swap 8281380k(5520k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.152-b02) for windows-amd64 JRE (1.8.0_152-release-1024-b02), built by "builder" with MS VC++ 10.0 (VS2010)
+
+time: Wed May 02 17:00:35 2018
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

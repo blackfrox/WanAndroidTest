@@ -1,0 +1,59 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56"
+    android:background="@color/colorCard"
+    android:gravity="center_vertical">
+
+    <ImageButton
+        android:id="@+id/search_back_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/selector_back_arrow_bg" />
+
+    <TextView
+        android:id="@+id/searchTv"
+        android:layout_width="@dimen/dp_54"
+        android:layout_height="@dimen/dp_28"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/dp_12"
+        android:background="@drawable/search_bg"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:text="@string/action_search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/searchEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_12"
+            android:inputType="text"
+            android:labelFor="@id/searchEdit"
+            android:textColor="@color/title_black"
+            android:textCursorDrawable="@drawable/shape_cursor"
+            android:textSize="@dimen/sp_14"
+            android:paddingLeft="@dimen/dp_27"
+            android:paddingRight="@dimen/dp_1"/>
+
+        <TextView
+            android:id="@+id/searchTintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_tint"
+            android:textColor="@color/grey_search"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_search"
+            android:layout_marginLeft="@dimen/dp_6" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

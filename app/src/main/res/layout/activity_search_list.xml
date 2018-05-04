@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wanandroidtest.ui.main.SearchListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/white"
+        app:elevation="@dimen/dp_0">
+
+        <include layout="@layout/toolbar"
+                 android:layout_width="match_parent"
+                 android:layout_height="?attr/actionBarSize"
+                 android:background="@color/white"
+                 app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlPrimaryColor="@color/colorPrimary"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.scwang.smartrefresh.header.BezierCircleHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/normal_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:scrollbars="none" />
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_up_arrow"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/dp_12"/>
+
+</android.support.design.widget.CoordinatorLayout>
