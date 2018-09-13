@@ -20,7 +20,6 @@ abstract class AbstractActivity: SupportActivity() {
         initEvent(savedInstanceState)
     }
 
-
     //用于基类里添加事件
     open fun onViewCreated() {
 

@@ -31,14 +31,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support:design:27.1.1'
+    //noinspection GradleDependency
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.android.support:support-vector-drawable:27.1.1'
     testImplementation 'junit:junit:4.12'
+    //noinspection GradleDependency
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    //noinspection GradleDependency
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     //ui
@@ -58,7 +60,7 @@ dependencies {
     implementation "me.yokeyword:fragmentation:$rootProject.fragmentationVersion"
     implementation "me.yokeyword:fragmentation-swipeback:$rootProject.fragmentationVersion"
 //    implementation 'com.tencent.bugly:crashreport_upgrade:1.3.4'
-//    implementation "com.orhanobut:logger:$rootProject.loggerVersion"
+    implementation "com.orhanobut:logger:$rootProject.loggerVersion"
     //tools
     implementation 'org.jetbrains.anko:anko:0.10.1'
     //net
@@ -76,15 +78,10 @@ dependencies {
     testImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.leakcanaryVersion"
     //db
     implementation 'org.litepal.android:core:1.5.0'
-    //di
-//    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
-//    kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
-//    implementation "org.glassfish:javax.annotation:$rootProject.javaxVersion"
     //dagger2
     implementation 'com.google.dagger:dagger:2.15'
     kapt 'com.google.dagger:dagger-compiler:2.15'
     //(官方的依赖不能build)必须写kapt，顺便在外层添加 apply plugin: 'kotlin-kapt'
-//    compileOnly 'org.glassfish:javax.annotation:10.0-b28' //不知道有什么用，好像kotlin中已经内置了该包
 
 //    implementation 'com.google.dagger:dagger-android:2.14.1'
 //    implementation 'com.google.dagger:dagger-android-support:2.14.1'

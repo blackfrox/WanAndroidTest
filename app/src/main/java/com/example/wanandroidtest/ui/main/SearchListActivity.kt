@@ -19,7 +19,6 @@ import com.example.wanandroidtest.other.bean.main.collect.FeedArticleListData
 import com.example.wanandroidtest.component.event.SelectNavigationEvent
 import com.example.wanandroidtest.component.event.SelectProjectEvent
 import com.example.wanandroidtest.presenter.main.SearchListPresenter
-import com.example.wanandroidtest.ui.LoginActivity
 import com.example.wanandroidtest.ui.homepager.ArticleListAdapter
 import com.example.wanandroidtest.util.CommonUtil
 import com.example.wanandroidtest.util.JudgeUtils
@@ -155,7 +154,7 @@ class SearchListActivity : AbstractRootActivity<SearchListPresenter>(), SearchLi
 
     private fun likeEvent(position: Int){
         if (!dataManager.loginStatus){
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             toast(getString(R.string.login_tint))
             return
         }

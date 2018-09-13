@@ -1,6 +1,5 @@
 package com.example.wanandroidtest.di.component
 
-import com.example.wanandroidtest.MainActivity
 import com.example.wanandroidtest.app.GeeksApp
 import com.example.wanandroidtest.di.module.AppModule
 import com.example.wanandroidtest.di.module.HttpModule

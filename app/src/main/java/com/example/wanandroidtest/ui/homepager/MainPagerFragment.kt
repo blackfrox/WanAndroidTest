@@ -22,7 +22,7 @@ import com.example.wanandroidtest.component.event.SelectNavigationEvent
 import com.example.wanandroidtest.component.event.SelectProjectEvent
 import com.example.wanandroidtest.other.http.cookies.CookiesManager
 import com.example.wanandroidtest.presenter.mainpager.MainPagerPresenter
-import com.example.wanandroidtest.ui.LoginActivity
+import com.example.wanandroidtest.ui.main.LoginActivity
 import com.example.wanandroidtest.util.*
 import com.scwang.smartrefresh.layout.SmartRefreshLayout
 import com.youth.banner.Banner

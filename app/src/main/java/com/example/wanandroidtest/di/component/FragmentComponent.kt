@@ -1,6 +1,6 @@
 package com.example.wanandroidtest.di.component
 
-import com.example.wanandroidtest.SettingFragment
+import com.example.wanandroidtest.ui.main.SettingFragment
 import com.example.wanandroidtest.di.scope.FragmentScope
 import com.example.wanandroidtest.ui.KnowledgeHierarchy.KnowledgeHierarchyFragment
 import com.example.wanandroidtest.ui.KnowledgeHierarchy.KnowledgeHierarchyListFragment

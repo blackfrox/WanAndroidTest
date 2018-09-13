@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -38,7 +38,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".ui.main.LoginActivity"
             android:label="@string/title_activity_login"
             android:screenOrientation="portrait">
         </activity>
@@ -47,7 +47,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name=".ui.main.SettingsActivity"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_settings">
         </activity>

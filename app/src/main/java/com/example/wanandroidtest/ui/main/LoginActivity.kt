@@ -1,11 +1,10 @@
-package com.example.wanandroidtest.ui
+package com.example.wanandroidtest.ui.main
 
 import android.os.Bundle
 import android.text.TextUtils
 
 import android.content.Intent
 import android.view.Gravity
-import com.example.wanandroidtest.MainActivity
 import com.example.wanandroidtest.R
 import com.example.wanandroidtest.app.Constants
 import com.example.wanandroidtest.base.activity.BaseActivity

@@ -18,7 +18,7 @@ import com.example.wanandroidtest.component.event.CollectEvent
 import com.example.wanandroidtest.component.event.SelectNavigationEvent
 import com.example.wanandroidtest.component.event.SelectProjectEvent
 import com.example.wanandroidtest.presenter.hierarchy.KnowledgeHierarchyListPresenter
-import com.example.wanandroidtest.ui.LoginActivity
+import com.example.wanandroidtest.ui.main.LoginActivity
 import com.example.wanandroidtest.ui.homepager.ArticleListAdapter
 import com.example.wanandroidtest.util.CommonUtil
 import com.example.wanandroidtest.util.JudgeUtils

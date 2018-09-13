@@ -1,8 +1,7 @@
-package com.example.wanandroidtest
+package com.example.wanandroidtest.ui.main
 
 import android.content.Intent
 import android.os.Bundle
-import android.preference.PreferenceManager
 import com.example.wanandroidtest.ui.homepager.MainPagerFragment
 import me.yokeyword.fragmentation.SupportFragment
 import android.support.v7.app.ActionBarDrawerToggle
@@ -12,16 +11,13 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
+import com.example.wanandroidtest.R
 import com.example.wanandroidtest.base.activity.BaseActivity
 import com.example.wanandroidtest.contract.main.MainContract
 import com.example.wanandroidtest.other.DataManager
 import com.example.wanandroidtest.other.http.cookies.CookiesManager
 import com.example.wanandroidtest.presenter.main.MainPresenter
 import com.example.wanandroidtest.ui.KnowledgeHierarchy.KnowledgeHierarchyFragment
-import com.example.wanandroidtest.ui.LoginActivity
-import com.example.wanandroidtest.ui.main.CollectFragment
-import com.example.wanandroidtest.ui.main.SearchDialogFragment
-import com.example.wanandroidtest.ui.main.UsageDialogFragment
 import com.example.wanandroidtest.ui.navigation.NavigationFragment
 import com.example.wanandroidtest.ui.project.ProjectFragment
 import com.example.wanandroidtest.util.BottomNavigationViewHelper
@@ -159,7 +155,7 @@ class MainActivity : BaseActivity<MainPresenter>(), MainContract.View {
                         toast(R.string.login_tint)
                     }
                 }
-                R.id.nav_setting -> startActivity(Intent(this,SettingsActivity::class.java))
+                R.id.nav_setting -> startActivity(Intent(this, SettingsActivity::class.java))
                 R.id.nav_night_mode -> {
                     mDataManager.nightModeState = !mDataManager.nightModeState
                     setNightMode(mDataManager.nightModeState)

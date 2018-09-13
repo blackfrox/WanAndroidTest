@@ -1,7 +1,6 @@
 package com.example.wanandroidtest.di.module
 
 import android.app.Activity
-import com.example.wanandroidtest.MainActivity
 import com.example.wanandroidtest.di.scope.ActivityScope
 import dagger.Module
 import dagger.Provides

@@ -1,10 +1,10 @@
 package com.example.wanandroidtest.di.component
 
-import com.example.wanandroidtest.MainActivity
+import com.example.wanandroidtest.ui.main.MainActivity
 import com.example.wanandroidtest.di.scope.ActivityScope
 import com.example.wanandroidtest.ui.main.ArticleDetailActivity
 import com.example.wanandroidtest.ui.KnowledgeHierarchy.KnowledgeHierarchyDetailActivity
-import com.example.wanandroidtest.ui.LoginActivity
+import com.example.wanandroidtest.ui.main.LoginActivity
 import com.example.wanandroidtest.ui.main.SearchListActivity
 import dagger.Component
 
